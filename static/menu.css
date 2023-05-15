@@ -1,18 +1,17 @@
 .navigation {
     position: relative;
-    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: end;
-    margin: 10px 0;
+    margin: 10px;
 }
 
 .hamburger {
     width: 50px;
     height: 30px;
     position: relative;
-    margin: 5px;
+    /* margin: 5px 10px 0 0; */
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -29,7 +28,7 @@
     position: absolute;
     height: 4px;
     width: 100%;
-    background: var(--blue);
+    background: var(--pink);
     border-radius: 9px;
     opacity: 1;
     left: 0;

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="hud">
+    <p id="exercise" class="current">Noodling</p>
+    <p id="timeElapsed" class="time">hh:mm:ss</p>
+</div>
+</div>
+<div class="controller">
+    <button id="startButton" onclick="startTimer()">⏵</button>
+    <button id="stopButton" onclick="stopTimer()" disabled>⏹</button>
+    <div>
+        <button>⏮</button>
+        <button>⏭</button>
+    </div>
+</div>
+
+{% endblock %}

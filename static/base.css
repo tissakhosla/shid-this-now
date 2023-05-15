@@ -25,6 +25,11 @@ body {
 
 header {
     text-align: center;
+    width: 100%;
+}
+
+a {
+    color: var(--white);
 }
 
 .hud {

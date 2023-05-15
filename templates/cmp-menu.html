@@ -6,9 +6,9 @@
         <span></span>
     </div>
     <div class="menu">
-        <a>Home</a>
-        <a>Logs</a>
-        <a>Exercises</a>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('logs') }}">Logs</a>
+        <a href="{{ url_for('exes') }}">Exercises</a>
     </div>
 </div>
 <script src="{{ url_for('static', filename='menu.js') }}"></script>
