@@ -1,0 +1,75 @@
+:root {
+    --black: rgb(5, 5, 5, 1);
+    --yellow: rgb(219, 206, 79);
+    --white: rgb(250, 250, 250, 1);
+    --blue: rgb(62, 99, 149);
+    --pink: rgb(173, 54, 123);
+}
+
+html {
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background: var(--black);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+header {
+    text-align: center;
+}
+
+.hud {
+    width: 100%;
+}
+
+.hud p {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.current,
+.time {
+    border-radius: 5px;
+}
+
+.current {
+    background: rgba(62, 99, 149, .6);
+}
+
+.time {
+    background: rgba(173, 54, 123, .3);
+    ;
+}
+
+.controller {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.controller div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.controller div button {
+    width: 50%;
+}
+
+.controller button {
+    border-radius: 5px;
+    border: solid blue 0px;
+    height: 50px;
+    margin: 5px;
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+    <title>{% block title %}{% endblock %} Shed Time</title>
+</head>
+<header>
+    <h1>Shed Time</h1>
+</header>
+
+<body>
+    <div class="hud">
+        <div class="current">
+            <p>Breathing Exercise 1</p>
+        </div>
+        <div class="time">
+            <p>hh:mm:ss</p>
+        </div>
+    </div>
+    <div class="controller">
+        <button>⏵</button>
+        <button>⏹</button>
+        <div>
+            <button>⏮</button>
+            <button>⏭</button>
+        </div>
+    </div>
+</body>
+<footer>
+    © jogotiko 2023
+</footer>
+
+</html>
