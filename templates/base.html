@@ -9,10 +9,11 @@
     <title>{% block title %}{% endblock %} Shed Time</title>
 </head>
 <header>
-    <h1>Shed Time</h1>
+    {% include 'cmp-menu.html' %}
 </header>
 
 <body>
+
     <div class="hud">
         <p id="exercise" class="current">Noodling</p>
         <p id="timeElapsed" class="time">hh:mm:ss</p>
@@ -26,6 +27,7 @@
             <button>⏭</button>
         </div>
     </div>
+
 </body>
 <footer>
     <p>© jogotiko 2023</p>

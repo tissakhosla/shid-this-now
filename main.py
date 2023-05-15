@@ -11,13 +11,6 @@ app = Flask(__name__)
 app.config.from_object(__name__)
 db = Crud(app.config['DATABASE'])
 
-@app.teardown_appcontext
-def close_db(exception):
-    """Closes the database connection at the end of the request."""
-    db = getattr(g, '_database', None)
-    if db is not None:
-        db.close()
-
 @app.route("/")
 def index():
     return render_template('base.html')

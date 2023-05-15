@@ -1,4 +1,3 @@
-// JavaScript code to handle the timer buttons and form submission
 var startTime, endTime, timerInterval;
 
 function buttonAbility(startval, stopval) {
