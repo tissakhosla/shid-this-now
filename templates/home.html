@@ -12,11 +12,15 @@
     </div>
     </div>
     <div class="controller">
-        <button id="startButton" onclick="startTimer()">⏵</button>
-        <button id="stopButton" onclick="stopTimer()" disabled>⏹</button>
+        <button id="startButton" onclick="startTimer()">
+            {% include 'svg-play.html' %}
+        </button>
+        <button id="stopButton" onclick="stopTimer()" disabled>
+            {% include 'svg-stop.html' %}
+        </button>
         <div>
-            <button type="submit" name="ctl" value="prev">⏮</button>
-            <button type="submit" name="ctl" value="next">⏭</button>
+            <button type="submit" name="ctl" value="prev">{% include 'svg-prev.html' %}</button>
+            <button type="submit" name="ctl" value="next">{% include 'svg-next.html' %}</button>
         </div>
     </div>
 </form>

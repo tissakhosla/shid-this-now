@@ -38,6 +38,10 @@ form {
 }
 
 .controller button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     border-radius: 5px;
     border: solid blue 0px;
     height: 50px;
@@ -45,4 +49,11 @@ form {
     font-size: 35px;
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
+}
+
+.svg-play,
+.svg-stop,
+.svg-next,
+.svg-prev {
+    height: 60%;
 }
