@@ -4,12 +4,12 @@
 {% block body %}
     <table>
         <th>Exercise</th>
-        <!-- <th>Date</th> -->
+        <th>Date</th>
         <th>Time</th>
         {% for row in logs: %}
             <tr>
                 <td>{{row[0]}}</td>
-                <!-- <td>{{row[1]}}</td> -->
+                <td>{{row[1]}}</td>
                 <td>{{row[2]}}</td>
             </tr>
         {% endfor %}

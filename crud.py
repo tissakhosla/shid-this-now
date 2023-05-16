@@ -52,7 +52,7 @@ class Crud:
                     if i == 1:
                         xr.append(v)
                     if i == 2:
-                        xr.append(datetime.fromtimestamp(v/1000).strftime("%Y-%m-%d %H:%M:%S"))
+                        xr.append(datetime.fromtimestamp(v/1000).strftime("%y-%m-%d %H:%M:%S"))
                     if i == 3:
                         xr.append(f'{timelength(v - row[2])}')
                 logs.append(xr)
