@@ -1,7 +1,7 @@
+'''routes for shed log'''
+
 import os
-import sqlite3
-import time
-from flask import Flask, render_template, request, g
+from flask import Flask, render_template, request
 from crud import Crud
 
 DATABASE = 'sheds.db'
@@ -25,11 +25,9 @@ def exes():
 
 @app.route('/save', methods=['POST'])
 def save():
-    db.createLogEntry(
-        (request.json['text'],
-        request.json['start'],
-        request.json['end'])
-    )
+    '''save timelog'''
+    db.createLogEntry((
+        request.json['text'], request.json['start'], request.json['end']))
 
     return {'success': True}
 
