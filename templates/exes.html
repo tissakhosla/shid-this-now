@@ -1,5 +1,18 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='logs.css') }}">
 {% extends 'base.html' %}
 
 {% block body %}
-    <h1>Exercises!</h1>
+<div class="tbl-container">
+    <h1>Exercises</h1>
+    <table>
+        <th>Exercise</th>
+        <th>Description</th>
+        {% for row in exes: %}
+        <tr>
+            <td>{{row[1]}}</td>
+            <td>{{row[2]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
 {% endblock %}

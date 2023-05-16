@@ -1,4 +1,18 @@
+h1 {
+    padding: 10px;
+}
+
+.tbl-container {
+    max-width: 95vw;
+}
+
 table {
-    text-align: center;
-    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th, td {
+    text-align: left;
 }

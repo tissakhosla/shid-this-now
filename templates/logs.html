@@ -2,16 +2,23 @@
 {% extends 'base.html' %}
 
 {% block body %}
+<div class="tbl-container">
+    <h1>Logs</h1>
     <table>
         <th>Exercise</th>
         <th>Date</th>
         <th>Time</th>
         {% for row in logs: %}
-            <tr>
-                <td>{{row[0]}}</td>
-                <td>{{row[1]}}</td>
-                <td>{{row[2]}}</td>
-            </tr>
+        <tr>
+            <td>{{row[0]}}</td>
+            <td>
+                {{row[1][0]}}
+                </br>
+                {{row[1][1]}}
+            </td>
+            <td>{{row[2]}}</td>
+        </tr>
         {% endfor %}
     </table>
+</div>
 {% endblock %}

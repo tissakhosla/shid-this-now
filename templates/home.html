@@ -1,19 +1,24 @@
 {% extends 'base.html' %}
 
 {% block body %}
+<link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+<script src="{{ url_for('static', filename='hudctl-time.js') }}"></script>
 
-<div class="hud">
-    <p id="exercise" class="current">Noodling</p>
-    <p id="timeElapsed" class="time">hh:mm:ss</p>
-</div>
-</div>
-<div class="controller">
-    <button id="startButton" onclick="startTimer()">⏵</button>
-    <button id="stopButton" onclick="stopTimer()" disabled>⏹</button>
-    <div>
-        <button>⏮</button>
-        <button>⏭</button>
+<form action="{{ url_for('home') }}" method="POST">
+    <div class="hud">
+        <input type="hidden" name="current_x" value="{{ v }}">
+        <p id="exercise" class="current">{{ exes[v][1] }}</p>
+        <p id="timeElapsed" class="time">hh:mm:ss</p>
     </div>
-</div>
+    </div>
+    <div class="controller">
+        <button id="startButton" onclick="startTimer()">⏵</button>
+        <button id="stopButton" onclick="stopTimer()" disabled>⏹</button>
+        <div>
+            <button type="submit" name="ctl" value="prev">⏮</button>
+            <button type="submit" name="ctl" value="next">⏭</button>
+        </div>
+    </div>
+</form>
 
 {% endblock %}
